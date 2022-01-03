@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.AddPartController">
+   <children>
+      <Label layoutX="45.0" layoutY="40.0" text="Add Part" />
+      <RadioButton fx:id="inHouseRadioButton" layoutX="131.0" layoutY="40.0" mnemonicParsing="false" onAction="#onInHouse" selected="true" text="In-House" />
+      <RadioButton fx:id="outsourcedRadioButton" layoutX="223.0" layoutY="40.0" mnemonicParsing="false" onAction="#onOutsourced" text="Outsourced" />
+      <Label layoutX="68.0" layoutY="110.0" text="ID " />
+      <TextField fx:id="idField" disable="true" layoutX="131.0" layoutY="106.0" promptText="Auto Gen-Disabled" />
+      <Label layoutX="68.0" layoutY="152.0" text="Name" />
+      <TextField fx:id="nameField" layoutX="131.0" layoutY="148.0" />
+      <Label layoutX="67.0" layoutY="191.0" text="Inv" />
+      <TextField fx:id="InventoryField" layoutX="131.0" layoutY="187.0" />
+      <TextField fx:id="costField" layoutX="131.0" layoutY="225.0" />
+      <Label layoutX="65.0" layoutY="229.0" text="Price/Cost" />
+      <Label layoutX="72.0" layoutY="265.0" text="Max" />
+      <TextField fx:id="maxField" layoutX="131.0" layoutY="261.0" />
+      <TextField fx:id="machineIdField" layoutX="131.0" layoutY="304.0" />
+      <Label fx:id="machineIdLabel" layoutX="61.0" layoutY="308.0" text="Machine ID" />
+      <Label layoutX="331.0" layoutY="265.0" text="Min" />
+      <TextField fx:id="minField" layoutX="370.0" layoutY="261.0" />
+      <Button fx:id="saveButton" layoutX="326.0" layoutY="339.0" mnemonicParsing="false" onAction="#onSave" text="Save" />
+      <Button fx:id="cancelButton" layoutX="380.0" layoutY="339.0" mnemonicParsing="false" onAction="#onCancel" text="Cancel" />
+   </children>
+</AnchorPane>
